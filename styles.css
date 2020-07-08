@@ -27,12 +27,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 
@@ -73,7 +73,7 @@
   height: 700px;
 }
 
-.image__title {
+.image .image__title {
   padding-top: 120px;
   padding-bottom: 50px;
   text-align: center;
@@ -90,55 +90,55 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: #212529;
   color: whitesmoke;
   height: auto;
+  border-bottom: 3px solid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-bottom: 3px solid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.activity_title {
+.activity .activity_title {
   font-size: 40px;
   text-align: center;
   margin-top: 80px;
   cursor: pointer;
 }
 
-.activity_title:hover {
+.activity .activity_title:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   color: darksalmon;
 }
 
-.activity_items {
+.activity .activity_items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 18px;
   width: 650px;
   margin-top: 30px;
+  margin-bottom: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.activity_items label {
+.activity .activity_items label {
   padding: 10px;
   margin: 14px;
 }
 
-.activity_items label:hover {
+.activity .activity_items label:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   color: beige;
@@ -155,20 +155,21 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 18px;
   margin: 30px;
+  width: 610px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 610px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .activity_lenguages h3 {
   padding: 10px;
   margin: 14px;
+  width: 100px;
 }
 
 .activity p {
@@ -200,20 +201,17 @@
 }
 
 @media (max-width: 600px) {
-  .container-image h1 {
+  .image__title {
     padding-top: 0px;
-    -webkit-transform: translateY(180px);
-            transform: translateY(180px);
+    -webkit-transform: translateY(120px);
+            transform: translateY(120px);
     -webkit-transition: all 2s;
     transition: all 2s;
-  }
-  .activity {
-    height: auto;
   }
   .activity p {
     width: auto;
   }
-  .activity_items {
+  .activity .activity_items {
     width: auto;
   }
   .activity_contact {
