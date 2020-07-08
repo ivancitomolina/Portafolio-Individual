@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-header {
+.header {
   background-color: #292c2f;
   color: white;
   display: -webkit-box;
@@ -21,7 +21,7 @@ header {
   left: 0;
 }
 
-header .name {
+.header .name {
   width: 30%;
   height: 100%;
   display: -webkit-box;
@@ -36,11 +36,11 @@ header .name {
   cursor: pointer;
 }
 
-.nav {
+.header .nav {
   width: 70%;
 }
 
-.nav .nav_list {
+.header .nav .nav__list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,7 +49,7 @@ header .name {
       justify-content: space-around;
 }
 
-.nav .nav_list .nav_items .nav_link {
+.header .nav .nav__list .nav__items .nav__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +61,7 @@ header .name {
           justify-content: center;
 }
 
-.nav .nav_list .nav_items .nav_link:hover {
+.header .nav .nav__list .nav__items .nav__link:hover {
   -webkit-transform: scale(1.04);
           transform: scale(1.04);
   text-decoration: underline;
@@ -236,8 +236,8 @@ header .name {
 #barra1 {
   width: 0;
   height: 100%;
-  -webkit-animation: progreso1 10s linear infinite;
-          animation: progreso1 10s linear infinite;
+  -webkit-animation: progreso3 10s linear infinite;
+          animation: progreso3 10s linear infinite;
   background: skyblue;
 }
 
@@ -329,8 +329,8 @@ header .name {
 #barra2 {
   width: 0;
   height: 100%;
-  -webkit-animation: progreso2 10s linear infinite;
-          animation: progreso2 10s linear infinite;
+  -webkit-animation: progreso3 10s linear infinite;
+          animation: progreso3 10s linear infinite;
   background: skyblue;
 }
 

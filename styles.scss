@@ -5,7 +5,32 @@
 }
 
 
-header{
+
+@mixin containers {
+    width: 25em;
+    height: 4em;
+    border: 1px solid;
+    margin:10px;
+}
+
+@mixin bars {
+    width: 0;
+    height: 100%;
+  animation: progreso3 10s linear infinite;
+    background:skyblue;
+}
+
+@mixin textBars {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 2em;
+    width: 12.5em;
+    height: 100%;
+    text-align: center;
+    color:red;
+    mix-blend-mode: multiply;
+}
+.header{
  background-color:#292c2f;
 	color: white;
    display:flex;
@@ -16,8 +41,8 @@ header{
   top: 0;
   left: 0;
    
-}
-header .name{
+
+  .name{
     width:30%;
     height:100%;
     display: flex;
@@ -27,38 +52,38 @@ header .name{
 }
 
 .nav{
-width: 70%;
-   
-}
-
-.nav .nav_list{
-
-	list-style:none;
-  display:flex;
-justify-content: space-around;     
-
-
-}
-
- 
-.nav .nav_list .nav_items .nav_link {
-  display:flex;
-	color:white;
-	text-decoration:none;
-    padding:4px;
-    justify-content: center;
+    width: 70%;
+       
     
+
+    .nav__list{
+
+        list-style:none;
+      display:flex;
+    justify-content: space-around;     
+    
+    .nav__items{
+        .nav__link {
+            display:flex;
+              color:white;
+              text-decoration:none;
+              padding:4px;
+              justify-content: center;
+              
+          }
+          & .nav__link:hover {
+            transform:scale(1.04);
+               text-decoration: underline;
+                
+           }
+
+    }
+    
+    }
+    
+ }
 }
-
-.nav .nav_list .nav_items .nav_link:hover {
- transform:scale(1.04);
-    text-decoration: underline;
-     
-}
-
-
-
-
+ 
 .image{
   background:url('https://www.10wallpaper.com/wallpaper/1366x768/1711/Office_Desk_Keyboard_Art_Cup_Photo_HD_Wallpaper_1366x768.jpg') no-repeat center center fixed;
     background-size:cover;
@@ -202,36 +227,16 @@ font-size: 18px;
 
 
 #contenedor1 {
-    width: 25em;
-    height: 4em;
-    border: 1px solid;
-    margin:10px;
+   @include containers();
 }
 
 
 #barra1 {
-    width: 0;
-    height: 100%;
-
-  animation: progreso1 10s linear infinite;
-
-
-    background:skyblue;
+    @include bars();
 }
 
 #texto1 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 2em;
-
-    width: 12.5em;
-    height: 100%;
-
-    text-align: center;
-
-    color:red;
-
-    mix-blend-mode: multiply;
+    @include textBars();
 }
 
 #texto1:after {
@@ -279,36 +284,19 @@ font-size: 18px;
 /* segundo contenedor*/
 
 #contenedor2 {
-    width: 25em;
-    height: 4em;
-    border: 1px solid;
-    margin:10px;
+    @include containers();
+
 }
 
 
 #barra2 {
-    width: 0;
-    height: 100%;
+    @include bars();
 
-  animation: progreso2 10s linear infinite;
-
-
-    background:skyblue;
 }
 
 #texto2 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 2em;
+    @include textBars();
 
-    width: 12.5em;
-    height: 100%;
-
-    text-align: center;
-
-    color:red;
-
-    mix-blend-mode: multiply;
 }
 
 #texto2:after {
@@ -352,36 +340,19 @@ font-size: 18px;
 /* trcer contenedor*/
 
 #contenedor3 {
-    width: 25em;
-    height: 4em;
-    border: 1px solid;
-    margin:10px;
+    @include containers();
+
 }
 
 
 #barra3 {
-    width: 0;
-    height: 100%;
+    @include bars();
 
-  animation: progreso3 10s linear infinite;
-
-
-    background:skyblue;
 }
 
 #texto3 {
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 2em;
+    @include textBars();
 
-    width: 12.5em;
-    height: 100%;
-
-    text-align: center;
-
-    color:red;
-
-    mix-blend-mode: multiply;
 }
 
 #texto3:after {
