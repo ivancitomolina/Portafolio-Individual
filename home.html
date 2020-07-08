@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <!-- <meta name="viewport" content="width=device-width, initial-scale=0.87"> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script>
+     $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top 
+    }, 1300);
+});
+     </script>
+    
+ </head>
+<body id="home">
+   <header>
+  
+  
+  <div class="name">Ivan Molina CH </div>
+       
+		<nav class="nav">
+			<ul class="nav_list ">
+         
+				<li class="nav_items"><a class="nav_link" href="#home">Home</a></li>
+			<li class="nav_items"><a class="nav_link" href="#aboutMe">About Me</a></li>
+        <li class="nav_items"><a class="nav_link" href="#skills">Skills</a></li>
+        <li class="nav_items"><a class="nav_link" href="#lenguage">Languages</a></li>
+      
+      
+			</ul>
+		</nav>
+	</header>
+ 
+    
+    <section class="image">
+  <h1 class="image__title"> Welcome to my Portfolio </h1>
+    
+ 
+</section>
+
+<section>
+  <article id="aboutMe" class="activity">
+    <h2  class="activity_title">Aboute Me </h2>
+    <p> I am a proactive, creative, innovative and responsible person with a great desire to contribute my knowledge and skills in the field of computer science.</p>
+  </article>
+  
+   <article  id="skills" class="activity">
+    <h2 class="activity_title">Skills </h2>
+    <section class="activity_items">
+          <label>Customer Sevices </label>
+          <label> SqlServer  </label>
+          <label> .Net  </label>  
+        <label> Html  </label>
+          <label> Oracle  </label>
+         <label>JavaScript </label>
+          <label> Css  </label> 
+        <label> Teamwork  </label>
+          <label> Soft skills  </label>
+         <label> Organisational skills  </label> 
+        
+</section>
+  </article>
+  
+   <article  id="lenguage" class="activity">
+    <h2 class="activity_title">Languages </h2>
+       <section class="activity_lenguages"> 
+         <h3> Spanish</h3>
+           <div id="contenedor1">
+  <div id="barra1">
+    <div id="texto1"></div>
+  </div>
+</div>
+            <h3> English</h3>
+           <div id="contenedor2">
+  <div id="barra2">
+    <div id="texto2"></div>
+  </div>
+</div>
+            <h3> Portugues</h3>
+           <div id="contenedor3">
+  <div id="barra3">
+    <div id="texto3"></div>
+  </div>
+</div>
+ 
+       
+       </section>
+   
+  </article>
+  
+   <article class="activity">
+    <h2  class="activity_title">Contact </h2>
+  <section class="activity_contact"> 
+       <label> Cellphone:88859583  </label>
+          <label> Direction :Palmares, Alajuela, Costa Rica  </label>
+         <label> Email:vaniamc06@gmail.com  </label> 
+        
+       
+       </section>
+       
+  </article>
+
+</section>
+
+</body>
+</html>
