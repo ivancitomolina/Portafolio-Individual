@@ -1,0 +1,59 @@
+$align:center;
+
+@mixin justify {
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: #292c2f;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: $align;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+
+
+    .name {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        @include justify();
+        cursor: pointer;
+    }
+
+    .nav {
+        width: 70%;
+
+        .nav__list {
+
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+
+            .nav__items {
+                .nav__link {
+                    display: flex;
+                    color: white;
+                    text-decoration: none;
+                    padding: 4px;
+                    justify-content: $align;
+
+                }
+
+                & .nav__link:hover {
+                    transform: scale(1.04);
+                    text-decoration: underline;
+
+                }
+
+            }
+
+        }
+
+    }
+}
